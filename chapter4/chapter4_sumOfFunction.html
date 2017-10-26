@@ -1,0 +1,38 @@
+<!-- this program take an arrays of number and return the sum of that number-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script type="text/javascript">
+    function range(start, end) {
+            var arrayList = [];
+            for (var i = start; i <= end; i++) {
+                arrayList.push(i);
+            }
+            return arrayList;
+        }
+        function sum(value) {
+            var sum = 0;
+            for (var i in value) {
+                sum = sum + value[i];
+            }
+            return console.log("the sum of number of the arrays [ " + value + " ] is :" + sum);
+        }
+        sum(range(1,20));
+        var arrayList = [];
+        while (numbers != -1) {
+            var numbers = Number(prompt("Enter a number press -1 to stop "));
+            if (numbers != -1) {
+                arrayList.push(numbers);
+            }
+        }
+
+        sum(arrayList);
+    </script>
+
+</body>
+
+</html>

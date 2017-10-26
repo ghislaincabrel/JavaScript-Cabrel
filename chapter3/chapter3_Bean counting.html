@@ -1,0 +1,30 @@
+<!-- Bean counting-->
+<!-- this program count the occurence a character "B" is found in a given string enter by a user-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script type="text/javascript">
+        var count=0;
+        function countBs(value) {
+            
+            for (var i = 0; i < value.length; i++) {
+
+                if (value.charAt(i) === "B") {
+                   count ++;
+                } 
+            }
+            return console.log("the occurence of \"B\" is : " + count);
+        }
+
+        var value = prompt("Enter a string ", "");
+        countBs(value);
+
+    </script>
+
+</body>
+
+</html>
