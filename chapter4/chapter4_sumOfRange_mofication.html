@@ -1,0 +1,35 @@
+<!-- this program take 3 argument : start , end and step ,
+     return an array containing the value following the step-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script type="text/javascript">
+        function range(start, end, step) {
+            if (step == undefined) {
+                step = 1
+            }
+            else {
+                var arrayList = [];
+                for (var i = start; i <= end; i = i + step) {
+                    arrayList.push(i);
+
+                }
+                return console.log("[ " + arrayList + " ]");
+            }
+
+        }
+        var value1 = Number(prompt("Enter a start value :", "1"));
+        var value2 = Number(prompt("Enter a end value :", "10"));
+        var value3 = Number(prompt("Enter a step :", "1"));
+
+        range(value1, value2, value3);
+
+    </script>
+
+</body>
+
+</html>

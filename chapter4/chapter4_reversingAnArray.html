@@ -1,0 +1,22 @@
+<!--this program take an array as  argument and output the reverse a of the array-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script type="text/javascript">
+    function reverseArray(value){
+        var new_array= [];
+        for(var i in value){
+            new_array.unshift(value[i]);
+        }
+        return console.log("The array is ["+value+" ] the reverse array is ["+new_array+" ]");
+    }
+    reverseArray([1,2,3,4,5,6,7,8,9]);
+    </script>
+
+</body>
+
+</html>

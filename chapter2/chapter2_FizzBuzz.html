@@ -1,0 +1,31 @@
+<!--FizzBuzz-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script type="text/javascript">
+        for (var number = 1; number <= 100; number++) {
+            if (number % 5 == 0 && number % 3 == 0) {
+                //i have puut the * after the value that is both divided y 3 and 5
+                console.log(number+"*");
+            }
+            else if (number % 5 == 0) {
+                console.log("Buzz");
+            }
+            else if (number % 3 == 0) {
+                console.log("Fizz");
+            }
+            else {
+                console.log(number);
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

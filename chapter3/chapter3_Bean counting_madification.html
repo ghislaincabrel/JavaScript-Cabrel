@@ -1,0 +1,32 @@
+<!-- Bean counting modification-->
+<!-- this program count the occurency ,a given character enter by a user 
+    is found  in a given string enter by itself-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script type="text/javascript">
+        var count=0;
+        function countBs(value,char) {
+            
+            for (var i = 0; i < value.length; i++) {
+
+                if (value.charAt(i) === char) {
+                   count ++;
+                } 
+            }
+            return console.log("the occurence of " +char+ " is : " + count);
+        }
+
+        var value = prompt("Enter a string ", "");
+        var char = prompt("Enter a character","").charAt(0);
+        countBs(value,char);
+
+    </script>
+
+</body>
+
+</html>
