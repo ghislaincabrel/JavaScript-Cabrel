@@ -1,0 +1,41 @@
+<!-- Flattening-->
+<!-- the program take in argument the array of array an 
+    output a single array containing all the elements of the input array-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script type="text/javascript">
+        var output = [];
+        function reduce(array, combine, start) {
+            var current = start;
+            for (var i = 0; i < array.lenght; i++) {
+                current = combine(current, array[i]);
+                return current;
+            }
+            console.log(reduce(output, function (a, b) { return a + b; }, 0));
+        }
+
+        function flatten(value) {
+            for (var i in value) {
+                output = output.concat(value[i]);
+            }
+
+            return console.log(" flatten array:[ " + output + " ]");
+        }
+
+        var arrOfArr = [[1, 2, 3], [4, 5, 7], [6, 8, 7], [4, 2, 8, 0, 0]];
+
+        console.log("the original array is :[[1,2,3],[4,5,7],[6,8,7],[4,2,8,0,0]]");
+
+        flatten(arrOfArr);
+
+
+    </script>
+
+</body>
+
+</html>
