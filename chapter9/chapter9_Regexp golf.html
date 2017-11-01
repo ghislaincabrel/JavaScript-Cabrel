@@ -1,0 +1,49 @@
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script type="text/javascript">
+        console.log("question 1");
+        console.log("car and cat");
+        var string = "car";
+        console.log(/^ca[r,t]/.test(string));
+
+        console.log("question 2");
+        console.log("pop and prop");
+        var string = "pop";
+        console.log(/^p[r]*op$/.test(string));
+
+        console.log("question 3");
+        console.log("ferret, ferry, and ferrari");
+        var string = "ferret";
+        console.log(/^ferr\w(\w*){1,2}/.test(string));
+
+        console.log("question 4");
+        console.log("Any word ending in ious");
+        var string = "ious";
+        console.log(/\w*(ious)$/.test(string));
+
+        console.log("question 5");
+        console.log("A whitespace character followed by a dot, comma, colon, or semicolon");
+        var string = " .,:;";
+        console.log(/\s\.\,\:\;/.test(string));
+
+        console.log("question 6");
+        console.log("A word longer than six letters");
+        var string = "chapter9";
+        console.log(/[a-z._-]{7,}/.test(string));
+
+        console.log("question 7");
+        console.log("A word without the letter e");
+        var string = "je suis la";
+        console.log(/[^e]/.test(string));
+
+    </script>
+
+</body>
+
+</html>
