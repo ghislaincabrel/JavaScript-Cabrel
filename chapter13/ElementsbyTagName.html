@@ -1,0 +1,39 @@
+<!--this program take an array as  argument and output the reverse a of the array-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Heading with a
+        <span>span</span> element.</h1>
+    <p>A paragraph with
+        <span>one</span>,
+        <span>two</span>
+        spans.</p>
+
+    <script type="text/javascript">
+
+        function Tagb(node, tagName) {
+            var found = [];
+           // tagName = tagName.toUpperCase;
+            var value = node.childNodes.lenght;
+            for (var i = 0; i <= value; i++) {
+                var child = node.childNodes[i];
+                if (child.nodeType == 1) {
+                    if (child.name == tagName) {
+                        found.push(child);
+                    }
+                }
+            }
+            console.log(found.length);
+        }
+        Tagb(document.body, "p");
+
+
+    </script>
+
+</body>
+
+</html>
