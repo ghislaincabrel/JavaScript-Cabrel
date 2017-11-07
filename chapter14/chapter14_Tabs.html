@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        var node_div = document.createElement("div")
+        document.body.appendChild(node_div);
+
+        for (var i = 0; i <= 3; i++) {
+            var node_p = document.createElement("p");
+            node_div.appendChild(node_p);
+        }
+        var node_p = document.getElementsByTagName("p");
+
+        for (var i = 0; i <= 3; i++) {
+            var node_button = document.createElement("button");
+            node_p[i].appendChild(node_button);
+        }
+
+        var node_button = document.getElementsByTagName("button");
+        for (var i = 0; i <= 3; i++) {
+            var tst_button = document.createTextNode("button " + i);
+            node_button[i].appendChild(tst_button);
+        }
+        for (var i = 0; i <= 3; i++) {
+            var node_h1 = document.createElement("h3");
+            node_p[i].appendChild(node_h1);
+        }
+
+        var node_h1_a = document.getElementsByTagName("h3");
+        for (var i = 0; i <= 3; i++) {
+            var tst = document.createTextNode(" This is a paragraph ");
+            node_h1_a[i].appendChild(tst);
+        }
+
+        
+            node_button[1].addEventListener("click", function () {
+                node_h1_a[1].style.display = "none";
+            });
+
+            node_button[0].addEventListener("click", function () {
+                node_h1_a[0].style.display = "none";
+            });
+
+            node_button[2].addEventListener("click", function () {
+                node_h1_a[2].style.display = "none";
+            });
+
+            node_button[3].addEventListener("click", function () {
+                node_h1_a[3].style.display = "none";
+            });
+        
+
+       
+
+
+    </script>
+
+</body>
+
+</html>
