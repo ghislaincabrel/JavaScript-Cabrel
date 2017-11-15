@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <script>
+        var xhr = new XMLHttpRequest();
+        console.log("default");
+        xhr.open("GET", "http://eloquentjavascript.net/author", false);
+        //xhr.setRequestHeader("accept", "text/html");
+        xhr.send(null);
+        console.log("status :" + xhr.status);
+        console.log("ready state :" + xhr.readyState);
+        console.log("status text :" + xhr.statusText);
+        console.log("response text :" + xhr.responseText);
+        console.log("header :" + xhr.getResponseHeader("content-type"));
+        console.log("all hearder :" + xhr.getAllResponseHeaders("context-type"));
+        console.log("\n");
+
+
+        // type = text/plain
+        console.log("text/plain type");
+        var xhr = new XMLHttpRequest();
+
+        xhr.open("GET", "http://eloquentjavascript.net/author", false);
+        xhr.setRequestHeader("accept", "text/plain");
+        xhr.send(null);
+        console.log("status :" + xhr.status);
+        console.log("ready state :" + xhr.readyState);
+        console.log("status text :" + xhr.statusText);
+        console.log("response text :" + xhr.responseText);
+        console.log("header :" + xhr.getResponseHeader("content-type"));
+        console.log("\n");
+
+        // type = text/html
+        console.log("text/html type");
+        var xhr = new XMLHttpRequest();
+
+        xhr.open("GET", "http://eloquentjavascript.net/author", false);
+        xhr.setRequestHeader("accept", "text/html");
+        xhr.send(null);
+        console.log("status :" + xhr.status);
+        console.log("ready state :" + xhr.readyState);
+        console.log("status text :" + xhr.statusText);
+        console.log("response text :" + xhr.responseText);
+        console.log("header :" + xhr.getResponseHeader("content-type"));
+        console.log("\n");
+
+
+
+
+        // type = application/json
+        console.log("application/json type");
+        var xhr = new XMLHttpRequest();
+
+        xhr.open("GET", "http://eloquentjavascript.net/author", false);
+        xhr.setRequestHeader("accept", "application/json");
+        xhr.send(null);
+        console.log("status :" + xhr.status);
+        console.log("ready state :" + xhr.readyState);
+        console.log("status text :" + xhr.statusText);
+        console.log("response text :" + xhr.responseText);
+        console.log("header :" + xhr.getResponseHeader("content-type"));
+        console.log("\n");
+
+        // type = application/rainbows+unicorns
+
+
+        console.log("application/rainbows+unicorns type");
+        var xhr = new XMLHttpRequest();
+
+        xhr.open("GET", "http://eloquentjavascript.net/author", false);
+        xhr.setRequestHeader("accept", "application/rainbows+unicorns");
+        xhr.send(null);
+        console.log("status :" + xhr.status);
+        console.log("ready state :" + xhr.readyState);
+        console.log("status text :" + xhr.statusText);
+        console.log("response text :" + xhr.responseText);
+        console.log("header :" + xhr.getResponseHeader("content-type"));
+        console.log("\n");
+    </script>
+
+</body>
+
+</html>
