@@ -1,0 +1,39 @@
+<!--this program take an array as  argument and output the reverse a of the array-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    Enter a text:
+    <input type="text" id="field">
+    <div id="suggestions" style="cursor: pointer"></div>
+
+    <script type="text/javascript">
+        
+    var terms = ["input", "output", "enter", "press", "even", "fuction", "alert", "array"];
+    
+    var textfield = document.querySelector("#field");
+    var suggestions = document.querySelector("#suggestions");
+
+    textfield.addEventListener("input", function () {
+        var matching = terms.filter(function (term) {
+            return term.indexOf(textfield.value) == 0;
+        });
+        suggestions.textContent = "";
+        matching.slice(0, 20).forEach(function (term) {
+            var node = document.createElement("div");
+            node.textContent = term;
+            node.addEventListener("click", function () {
+                textfield.value = term;
+                suggestions.textContent = "";
+            });
+            suggestions.appendChild(node);
+        });
+    });
+    </script>
+
+</body>
+
+</html>
